@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="create.css">
+    <title>Firebase index</title>
+    <script type="module" src="create.js" defer></script>
+    <script type="module" src="login.js" defer></script>
+    <script type="module" src="grand.js" defer></script>
+</head>
+
+<body>
+    <div class="quote">
+        Streamline your connections effortlessly<br> with our intuitive desktop site
+    </div>
+    <div class="start">
+
+        <p id="btn">Get started</p>
+    </div>
+
+    <div class="center">
+        <form>
+            <span class="plus" id="close">+</span>
+            <h1>Create</h1>
+            <div class="txt_field">
+                <input type="email" id="email" required>
+                <label class="lbl">Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="password" required>
+                <label class="lbl">Password</label>
+            </div>
+
+            <button id="submit" class="sub">Create Account</button>
+
+            <div class="login">
+                <p>Already have an account ? <a href="#" id="login">Login Account</a></p>
+            </div>
+        </form>
+        <div class="center2">
+            <form>
+                <span class="plus" id="close2">+</span>
+                <h1>Login</h1>
+
+                <div class="txt_field">
+                    <input type="email" id="email2" required>
+                    <label class="lbl">Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" id="password2" required>
+                    <label class="lbl">Password</label>
+                </div>
+                <button id="submit2" class="sub">Login</button>
+
+                <div class="create">
+                    <p>Don't have an account ? <a href="#" id="create">Create Account</a></p>
+                </div>
+            </form>
+        </div>
+        <script>
+            document.getElementById('btn').addEventListener('click', function () {
+                document.querySelector('.center').style.display = 'flex';
+            });
+            document.getElementById('login').addEventListener('click', function () {
+                document.querySelector('.center2').style.display = 'flex';
+            });
+
+
+            document.getElementById('create').addEventListener('click', function () {
+                document.querySelector('.center2').style.display = 'none';
+
+                document.querySelector('.center').style.display = 'flex';
+            });
+
+
+            document.getElementById('close').addEventListener('click', function () {
+                document.querySelector('.center').style.display = 'none';
+                document.querySelector('.center2').style.display = 'none';
+            });
+            document.getElementById('close2').addEventListener('click', function () {
+                document.querySelector('.center').style.display = 'none';
+                document.querySelector('.center2').style.display = 'none';
+            });
+
+
+        </script>
+</body>
+
+</html>
