@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+.background{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    min-height:100vh;
+    background-image: url("https://hhg.com.au/wp-content/uploads/2023/05/Contact-us.jpg"); 
+    background-repeat: no-repeat; 
+    background-size:cover;
+    background-attachment: fixed;
+    z-index:-1;
+    filter: blur(2px);
+}
+.q{
+    color:azure;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px 80px;
+    margin-top:30px;
+}
+.head {
+    display: flex;
+    margin:10px 20px;
+}
+
+.head .hitem {
+    margin: 5px;
+}
+
+.head .hitem #rname {
+    border-radius: 40px;
+    font-size: 15px;
+    padding-left: 20px;
+    border-bottom:2px solid rgb(0, 0, 0);
+    background-color: rgb(154,174,179);
+}
+
+.head .s1 {
+    margin-left: 80px;
+}
+
+.head #retrievesubmit {
+    margin-left: -55px;
+    margin-top: 12px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.head #stay {
+    font-size: 40px;
+    cursor: context-menu;
+    color:white
+}
+
+.head #userSignedin {
+    font-size: 17px;
+    margin-top: 17px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.head #logoutpage {
+    margin-left: 50px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#detailspopup {
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    width: 400px;
+    height: 110px;
+    background-color: white;
+    display: none;
+    padding: 10px;
+    line-height: 10px;
+    border:1px solid black;
+}
+
+#detailspopup #detail1 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+#detailspopup #detail2 {
+    font-size: 20px;
+}
+
+#detailspopup #detail3 {
+    font-size: 20px;
+}
+
+#gclose {
+    position: absolute;
+    /* top:0; */
+    right: 2%;
+    bottom: 85%;
+    font-size: 35px;
+    margin-top: 130px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+#main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mainitem {
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    width: 350px;
+    color: rgb(0, 0, 0);
+    padding-top:30px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#main input {
+    height: 24px;
+    width: 280px;
+    border: 0;
+    border-bottom: 1px solid black;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: black;
+
+}
+::placeholder {
+    color: rgb(0, 0, 0,0.7);
+    opacity: 1; 
+  }
+#main .d1 {
+    padding: 20px 30px;
+}
+#addsubmit, #updatesubmit, #deletesubmit{
+    height:28px;
+    width:120px;
+    text-align: center;
+    border-radius: 40px;
+    padding-top:8px;
+    margin-top:30px;
+    margin-left:70px;
+    cursor: pointer;
+    background-color: rgb(110,109,112);
+    
+}
+#main .d1 .heading{
+    cursor: context-menu;
+    margin:0px;
+    margin-top:-20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight:550;
+    text-align: center;
+}
+#retrieveallsubmit{
+    border:1px solid black;
+    height:28px;
+    width:160px;
+    text-align: center;
+    border-radius: 40px;
+    padding-top:8px;
+    margin-top:10px;
+    margin-left:80px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+}

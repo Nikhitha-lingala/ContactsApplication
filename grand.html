@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grand.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="grand.js" defer></script>
+    <script type="module" src="login.js" defer></script>
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <div id="container">
+        <div class="head">
+            <p id="retrieveallsubmit" class="hitem">My contacts</p>
+            <form class="hitem s1">
+                <input type="text" id="rname" placeholder="Search a contact" style="height:40px;width:500px" required>
+            </form>
+            <p id="retrievesubmit" class="hitem"><i class="fa-solid fa-magnifying-glass"></i></p>
+            <p id="logoutpage">Logout</p>
+            <p id="userSignedin" class="hitem">User details</p>
+
+        </div>
+        <p class="q">Simplify your life with the contacts website.
+             Say goodbye to scattered business cards and forgotten phone numbers, 
+             and hello to streamlined communication.</p>
+        <div id="detailspopup">
+            <span class="gplus" id="gclose">+</span>
+            <p id="detail1">Kevin</p>
+            <p id="detail2">9999988888</p>
+            <p id="detail3">kevin@gmail.com</p>
+        </div>
+        <br><br>
+        <div id="main">
+            <form class="add mainitem">
+                <div class="d1">
+                    <p class="heading">Add a contact</p>
+                    <input type="text" id="aname" placeholder="Contact name" required>
+                    <input type="number" id="anumber" placeholder="Mobile Number" required>
+                    <input type="email" id="aemail" placeholder="Email">
+                    <p id="addsubmit">Add</p>
+                </div>
+            </form>
+
+            <form class="update mainitem">
+                <div class="d1">
+                    <p class="heading">Update a contact</p>
+                    <input type="text" id="uname" placeholder="Contact name" required>
+                    <input type="number" id="unumber" placeholder="Mobile Number">
+                    <input type="email" id="uemail" placeholder="Email">
+                    <p id="updatesubmit">Update</p>
+                </div>
+            </form>
+
+            <form class="delete mainitem">
+                <div class="d1">
+                    <p class="heading">Delete a contact</p>
+                    <input type="text" id="dname" placeholder="Contact name" required>
+                    <p id="deletesubmit">Delete</p>
+                </div>
+            </form>
+        </div>
+        <form>
+            <table id="contactList">
+                
+            </table>
+        </form>
+        <!-- logout -->
+    </div>
+    <script>
+        document.getElementById("gclose").addEventListener("click", () => {
+            document.getElementById('detailspopup').style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
